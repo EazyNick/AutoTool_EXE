@@ -20,7 +20,9 @@ def Json_Get():
     with open('data.json', 'r') as json_file:
         loaded_data = json.load(json_file)
 
+    #인터벌
     loaded_keys = list(loaded_data.keys())
+    #동작 내용
     loaded_values = list(loaded_data.values())
 
     return loaded_keys, loaded_values

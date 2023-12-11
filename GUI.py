@@ -165,7 +165,8 @@ class MyWindow(QMainWindow):
     # json에 저장 한 동작 불러오고 실행 버튼
     def button_click3(self):
 
-        SaveAndActivate.perform_actions(self.Arrange, self.intervals)
+        loaded_keys, loaded_values = Json.Json_Get()
+        SaveAndActivate.perform_actions(loaded_values, loaded_keys)
 
     # 사용자 입력 받는 버튼
     def button_click4(self):
